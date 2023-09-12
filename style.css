@@ -5,7 +5,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 /* navbar */
 .navbar{
     display: flex;
