@@ -1,3 +1,8 @@
+<?php
+session_start();
+session_destroy();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +29,7 @@
  
     <section id="home">
         <h1 class="heading">HI, I AM</h1>
-        <h1 class="heading">TOM ARNOLD</h1>
+        <h1 class="heading">TOM OWITI</h1>
         <br><br>
         <p>AND THIS IS MY RESUME</p>
     </section>
@@ -79,7 +84,7 @@
 
     <section id="contact">
         <h1 class="heading">Contact</h1>
-        <form action="" class="form">
+        <form action="" class="form">  
             <input type="text" name="name" class="input" placeholder="Enter Your Name">
             <input type="email" name="email" class="input" placeholder="Enter Your Email">
             <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
