@@ -5,6 +5,11 @@
 html{
     scroll-behavior: smooth;
 }
+
+.mobile-navbar{
+    display: none;
+}
+
 /* navbar */
 .navbar{
     display: flex;
@@ -57,8 +62,9 @@ html{
     height: 700px;
     width: 100%;
     z-index: -1;
-    opacity: .8;ss
+    opacity: .8;
 }
+
 .heading{
     color: white;
     font-size: 3rem;
@@ -129,6 +135,10 @@ html{
     font-size: 1.3rem;
 }
 
+.container{
+    padding-bottom: 40px;
+}
+
 /* About Section */
 #about{
     display: flex;
@@ -187,6 +197,7 @@ html{
     margin: 15px;
     padding: 10px;
     border-radius: 20px;
+    width: 40%;
 }
 #submit{
     padding: 15px 20px;

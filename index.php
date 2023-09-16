@@ -17,6 +17,17 @@ session_destroy();
     
 </head>
 <body>
+    <nav class="mobile-navbar" id="mobile-navbar">
+        <img id="menu-open" class="menu-icon menu-open" src="Images/hamburger.svg" alt="">
+        <img id="menu-close" class="menu-icon menu-close hidden" src="Images/close.svg" alt="">
+        <ul id="mobile-menu-items" class="hidden">
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+            <li><a href="#education" id="education-link">Education</a></li>
+            <li><a href="#about" id="about-link">About Me</a></li>
+            <li><a href="#contact" id="contact-link">Contact Me</a></li>
+        </ul>
+    </nav>
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -46,7 +57,7 @@ session_destroy();
         </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="container">
         <h1 class="heading">Education</h1>
         <div class="columns">
             <div class="box">
@@ -71,8 +82,8 @@ session_destroy();
         </div>
     </section>
 
-    <section id="about">
-        <h1 class="heading">About me</h1>0
+    <section id="about" class="container">
+        <h1 class="heading">About me</h1>
         <div class="about">
             <img src="arnold.jpg" alt="My Pic">
             <div class="name">
@@ -82,14 +93,51 @@ session_destroy();
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container">
         <h1 class="heading">Contact</h1>
-        <form action="" class="form">  
+        <form action="config.php" method="POST" class="form">  
             <input type="text" name="name" class="input" placeholder="Enter Your Name">
             <input type="email" name="email" class="input" placeholder="Enter Your Email">
             <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
-            <input type="submit" value="Submit" id="submit">
+            <input type="submit" value="Submit" id="submit" name="button">
         </form>
     </section>
 </body>
 </html>
+
+<script>
+    const mobileNavbar =document.getElementById('mobile-navbar');
+    const menuOpen =document.getElementById('menu-open');
+    const menuClose =document.getElementById('menu-close');
+    const mobileMenuItems =document.getElementById('mobile-menu-items');
+
+    const homeLink =document.getElementById('home-link');
+    const portfolioLink =document.getElementById('portfolio-link');
+    const educationLink =document.getElementById('education-link');
+    const aboutLink =document.getElementById('about-link');
+    const contactLink =document.getElementById('contact-link');
+
+    function toggleMobileNavBar(){
+        menuOpen.classList.toggle('hidden');
+        menuClose.classList.toggle('hidden');
+        mobileMenuItems.classList.toggle('hidden');
+        mobileNavbar.classList.toggle('mobile-nav-styling');
+    }
+
+    menuClose.addEventListener('click', toggleMobileNavBar);
+
+    menuOpen.addEventListener('click', toggleMobileNavBar);
+
+    homeLink.addEventListener('click', toggleMobileNavBar);
+
+    portfolioLink.addEventListener('click', toggleMobileNavBar);
+
+    educationLink.addEventListener('click', toggleMobileNavBar);
+
+    aboutLink.addEventListener('click', toggleMobileNavBar);
+    
+    contactLink.addEventListener('click', toggleMobileNavBar);
+    
+
+
+</script>
