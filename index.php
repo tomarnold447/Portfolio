@@ -14,7 +14,7 @@ session_destroy();
     <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
     <link rel="stylesheet" media="screen and (max-width:695px)" href="phone1.css">
    
-    
+     
 </head>
 <body>
     <nav class="mobile-navbar" id="mobile-navbar">
