@@ -1,138 +1,1002 @@
+<!--style inspired by: https://github.com/bedimcode-->
+<!--author: Tom Owiti-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
-    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
-    <link rel="stylesheet" media="screen and (max-width:695px)" href="phone1.css">
-   
-     
-</head>
-<body>
-    <nav class="mobile-navbar" id="mobile-navbar">
-        <img id="menu-open" class="menu-icon menu-open" src="Images/hamburger.svg" alt="">
-        <img id="menu-close" class="menu-icon menu-close hidden" src="Images/close.svg" alt="">
-        <ul id="mobile-menu-items" class="hidden">
-            <li><a href="#home" id="home-link">Home</a></li>
-            <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
-            <li><a href="#education" id="education-link">Education</a></li>
-            <li><a href="#about" id="about-link">About Me</a></li>
-            <li><a href="#contact" id="contact-link">Contact Me</a></li>
-        </ul>
-    </nav>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
- 
-    <section id="home">
-        <h1 class="heading">HI, I AM</h1>
-        <h1 class="heading">TOM ARNOLD OWITI</h1>
-        <br><br>
-        <p>AND THIS IS MY RESUME</p>
-    </section>
 
-    <section id="portfolio">
-        <h1 class="heading">Portfolio</h1>
-        <div class="gallery">
-            <img src="Images/img1.jpg" alt="">
-            <img src="Images/img2.jpg" alt="">
-            <img src="Images/img3.jpg" alt="">
-            <img src="Images/img4.jpg" alt="">
-            <img src="Images/img5.jpg" alt="">
-            <img src="Images/img6.jpg" alt="">
-        </div>
-    </section>
+    <head>
+        <!--==================== META ====================-->
+        <meta name="description"
+            content="Personal page of Yassine Rodani, Computer Science Student at University of Haute-Alsace and AI Engineer Intern at SII Est">
+        <meta name="keywords"
+            content="yassine rodani, computer science, data analysis, data science, machine learning, deep learning, natural language processing, large language models, cloud">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <section id="education" class="container">
-        <h1 class="heading">Education</h1>
-        <div class="columns">
-            <div class="box">
-                <h2>Strathmore University <br>Bachelor of Business Information Technology</h2>
-                <h3>2020 - 2024</h3>
-                <p>Currently pursuing a course in Business Information Technology where I intend to be the best web designer once I complete my course.</p>
-            </div>
-            <div class="box">
-                <h2>Kabianga School</h2>
-                <h3>2016 - 2019</h3>
-                <p>Successfully completed my secondary education within the 4 years where I managed to pass my final exams</p>
-                <p>While in school, I was a dormitory captain which came with a lot of responsibilities which have had a positive impact in my life.</p>
-                <p>I attended trainings and workshops, on Strategy and leadership. </p>
-            </div>
-            <div class="box">
-                <h2>Furaha Primary School</h2>
-                <h3>2008 - 2015</h3>
-                <p>Successfully completed my primary education at Furaha Primary School, passed highly and proceeded to high school.</p>
-                <p>While in school, I was involved in several co-curricular activities such as scouting where our school proceeded up to East Africa competitions</p>
-                <p> I was also an active member of the drama club, music club and many others.</p>
-            </div>
-        </div>
-    </section>
+        <title>Tom Arnold Owiti</title>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--==================== TYPELIGHTER JS ====================-->
+        <script src ="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!--==================== GOOGLE ANALYTICS ====================-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PWGHS8967"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    <section id="about" class="container">
-        <h1 class="heading">About me</h1>
-        <div class="about">
-            <img src="arnold.jpg" alt="My Pic">
-            <div class="name">
-                <h2>I'm Tom Arnold</h2>
-                <p>My name is Tom Arnold, born on 25th April 2001 in Kisumu, Kenya. I'm currently pursuing my degree (Bachelors of Business Information Technology) at Strathmore University. <br>During my free time, I enjoy reading articles and books from the likes of renowned American business magnate Bill Gates who is the co-founder of Microsoft Corporation. I love taking part and volunteering in community involvement.<br> I have always been intrested to learn a new thing each and every day thus this pushes me to do a lot of research. I also love travelling, socializing and watching movies.</p>
-            </div>
-        </div>
-    </section>
+            gtag('config', 'G-1PWGHS8967');
+        </script>
+    </head>
 
-    <section id="contact" class="container">
-        <h1 class="heading">Contact</h1>
-        <form action="config.php" method="POST" class="form">  
-            <input type="text" name="name" class="input" placeholder="Enter Your Name">
-            <input type="email" name="email" class="input" placeholder="Enter Your Email">
-            <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
-            <input type="submit" value="Submit" id="submit" name="button">
-        </form>
-    </section>
-</body>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Tom Arnold Owiti</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-atom nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-book-alt nav__icon"></i> Qualification
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#certifications" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Certifications
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="uil uil-desktop-alt nav__icon"></i> Projects
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/tom-owiti/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+
+                            <a href="https://github.com/tomarnold447/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+
+                            <a href="https://twitter.com/tomowitti" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+
+                            <a href="https://wa.me/254718765262" target="_blank" class="home__social-icon">
+                                <i class="uil uil-whatsapp-alt"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/saint.arnold_/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path
+                                        d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    <image class="home__blob-img" x="-5" y="5" href="assets/img/general/arnold.jpg" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">
+                                Hi, <span class="home__colored-text">Tom Owiti</span> here.<span class="home__colored-text"></span>
+                            </h1>
+                            <h2 class="home__subtitle">
+                                <span class="typeWriter" data-text='["Software Developer", "Business Intelligence Enthusiast"]' data-speed=2></span>
+                            </h2> 
+                            <p class="home__description">
+                                I am deeply driven by the transformative potential of <span class="home__colored-text"> technology.</span>
+                            </p>
+                            <a href="#contact" class="home__button button button--flex">
+                                Say hi <i class="uil uil-envelope-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About me</h2>
+                <span class="section__subtitle">Quick introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/general/about.jpg" alt="About section background image" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">
+                            I'm currently a Web developer at 
+                            <a href="#" class="home__colored-text">Y2K</a>,
+                            working on a project that serves as an informative and interactive hub for children and families affected by Sickle Cell Disease (SCD). <br><br>
+                            I have a keen interest in business intelligence, 
+                            artificial intelligence, cybersecurity, 
+                            and everything in between.. <br><br>
+                            ***<br>
+                            My interests are: <br> Outdoor activities such as Event participation, Travelling. <br> Community Involvement by offering tech support. 
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">4+</span>
+                                <span class="about__info-name">Year<br> experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">6</span>
+                                <span class="about__info-name">Projects<br>Completed</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">6</span>
+                                <span class="about__info-name">Certifications <br> Completed</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="TomResume.pdf" class="button button--flex" href="/portfolio/assets/pdf/TomResume.pdf">
+                                My resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILL 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Development</h1>
+                                    <span class="skills__subtitle">All about the core..</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Html</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">69%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__java"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__r"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__number">45%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__swift"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== SKILL 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Frameworks</h1>
+                                    <span class="skills__subtitle">Everyone needs support</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Laravel</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__np"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pd"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Pandas</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__plt"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">NumPy</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sk"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Flask</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__flask"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!--==================== SKILL 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-atom skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Machine Learning</h1>
+                                    <span class="skills__subtitle">Theory, theory!</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Linear and Logistic Regression</h3>
+                                        <span class="skills__number">77%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__lr"></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Decision Trees</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__dt"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Exploratory Data Analysis</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__eda"></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Convolutional Neural Networks</h3>
+                                        <span class="skills__number">63%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cnn"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Natural Language Processing</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__nlp"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Ensemble Models</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__em"></span>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <!--==================== SKILL 4 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-cloud-lock skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Cloud and Engineering</h1>
+                                    <span class="skills__subtitle">Fly Fast & High!</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">AWS</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__aws"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--==================== SKILL 5 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-analysis skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Databases</h1>
+                                    <span class="skills__subtitle">Storing data and making it pretty</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mysql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PowerBI</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__powerbi"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a>Primary School</a>
+                                    </h3>
+                                    <span class="qualification__subtitle">Kisumu - Muhoroni Furaha Primary School</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2008 - 2015
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a>High School</a>
+                                    </h3>
+                                    <span class="qualification__subtitle">Kericho - Kabianga School</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016 - 2019
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a>
+                                            Bachelor of Business Information Technology
+                                        </a>
+                                    </h3>
+                                    <span class="qualification__subtitle">Nairobi - Strathmore University</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2024
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
+                            </div>
+
+                    
+                           
+
+                        </div>
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a>Voluntary community service</a>
+                                    </h3>
+                                    <span class="qualification__subtitle">Nairobi - Texas Cancer Centre</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        02/2021 - 03/2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a>Systems & Network Administrator Intern</a>
+                                    </h3>
+                                    <span class="qualification__subtitle">Nairobi - Kabete National Polytechnic</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        02/2023 - 04/2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a>
+                                            Web Developer
+                                        </a>
+                                    </h3>
+                                    <span class="qualification__subtitle">Nairobi - Yes to Kids Foundation</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        02/2024 - 04/2024
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
+                            </div>
+
+                    
+                           
+
+                        </div>
+            </section>
+
+            <!--==================== CERTIFICATIONS ====================-->
+            <section class="certification section" id="certifications">
+                <h2 class="section__title">Certifications</h2>
+                <span class="section__subtitle">Extra courses I have undertaken</span>
+
+                <div class="certification__container container grid">
+
+                    <!--==================== CERTIFICATION 1 ====================-->
+                    <div class="certification__content">
+                        <div>
+                            <img src="assets/img/certifications/cisco.png" class="certification__img_1">
+                            <h4 class="certification__title">Network Automation Engineering Fundamentals </h4>
+                            <h4 class="certification__subtitle">Expiry Date: Does not expire</h4>
+                        </div>
+
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.coursera.org/account/accomplishments/specialization/ECSJCWPTHQC2" target="_blank">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <!--==================== CERTIFICATION 2 ====================-->
+                    <div class="certification__content">
+                        <div>
+                            <img src="assets/img/certifications/amazon.png" class="certification__img">
+                            <h4 class="certification__title">Academy Graduate - AWS Academy Cloud Foundations </h4>
+                            <h4 class="certification__subtitle">Expiry Date: Does not expire</h4>
+                        </div>
+
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.credly.com/badges/b3d61f35-6261-43e5-b527-eff9b79421e2/print"
+                            target="_blank">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <!--==================== CERTIFICATION 3 ====================-->
+                    <div class="certification__content">
+                        <div>
+                            <img src="assets/img/certifications/google.png" class="certification__img_2">
+                            <h4 class="certification__title">Organizational Change and Culture for Adopting Google Cloud  </h4>
+                            <h4 class="certification__subtitle">Expiry Date: Does not expire</h4>
+                        </div>
+
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.coursera.org/account/accomplishments/specialization/W95CED9K9E6W" target="_blank">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <!--==================== CERTIFICATION 4 ====================-->
+                    <div class="certification__content">
+                        <div>
+                            <img src="assets/img/certifications/cisco.png" class="certification__img">
+                            <h4 class="certification__title">Introduction to Cybersecurity</h4>
+                            <h4 class="certification__subtitle">Expiry Date: Does not expire</h4>
+                        </div>
+
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.credly.com/badges/d8f22358-fcd6-4853-84dc-964644e54084/public_url" target="_blank">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                    <!--==================== CERTIFICATION 5 ====================-->
+                    <div class="certification__content">
+                        <div>
+                            <img src="assets/img/certifications/ibm.png" class="certification__img_2">
+                            <h4 class="certification__title">IT Fundamentals for Cybersecurity  </h4>
+                            <h4 class="certification__subtitle">Expiry Date: Does not expire</h4>
+                        </div>
+
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.coursera.org/account/accomplishments/specialization/42BZBAR4YJWU" target="_blank">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+            <!--==================== CERTIFICATION 6 ====================-->
+                    <div class="certification__content">
+                        <div>
+                            <img src="assets/img/certifications/coursera.png" class="certification__img_2">
+                            <h4 class="certification__title">Introduction to Cyber Attacks</h4>
+                            <h4 class="certification__subtitle">Expiry Date: Does not expire</h4>
+                        </div>
+
+                        <a class="button button--flex button--small button--link certification__button"
+                            href="https://www.coursera.org/account/accomplishments/verify/TL3EM7TR6RDA" target="_blank">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                      </div>
+            </section>
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="projects__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PROJECT 1 ====================-->
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/img/projects/yes2kids.png" alt="PaperWhiz project's image"
+                                class="projects__img">
+
+                            <div class="projects__data">
+                                <h3 class="projects__title">Yes to Kids</h3>
+                                <p class="projects__description">
+                                    Yes to Kids Foundation (Kenyan NGO) website that serves as an informative and interactive hub for children and families affected by Sickle Cell Disease (SCD). 
+                                </p>
+                                <a href="https://github.com/tomarnold447/yes2kids" target="_blank"
+                                    class="button button--flex button--small projects__button">
+                                    GitHub repository
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 2 ====================-->
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/img/projects/etender.png" alt="Movie sentiment analysis project's image"
+                                class="projects__img">
+
+                            <div class="projects__data">
+                                <h3 class="projects__title">E-tender Management System</h3>
+                                <p class="projects__description">
+                                    A Web Based Decision Support Tender Evaluation Management System for Public Procurement in Kenya.
+                                </p>
+                                <a href="https://github.com/tomarnold447/135203" target="_blank"
+                                    class="button button--flex button--small projects__button">
+                                    GitHub repository
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 3 ====================-->
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/img/projects/is1.png" alt="Fish Detector project's image"
+                                class="projects__img">
+
+                            <div class="projects__data">
+                                <h3 class="projects__title">Dr Alavi's Toto Clinic</h3>
+                                <p class="projects__description">
+                                    A web-based system for private practitioners to facilitate efficient communication between themselves and the off-site patients in order to reduce the number of patients calling the practitioner directly.
+                                </p>
+                                <a href="https://github.com/tomarnold447/Year-3-IS-Project-1" target="_blank"
+                                    class="button button--flex button--small projects__button">
+                                    GitHub repository
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 4 ====================-->
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/img/projects/ecommerce.png" alt="Portfolio Website project's image"
+                                class="projects__img">
+
+                            <div class="projects__data">
+                                <h3 class="projects__title">Aquiliq Store</h3>
+                                <p class="projects__description">
+                                    An e-commerce website facilitates the buying and selling of goods or services over the internet.
+                                </p>
+                                <a href="https://github.com/tomarnold447/ecommerce-clothing-website" target="_blank"
+                                    class="button button--flex button--small projects__button">
+                                    GitHub repository
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 5 ====================-->
+                        <div class="projects__content grid swiper-slide">
+                            <img src="assets/img/projects/portfolio.png" alt="Portfolio Website project's image"
+                                class="projects__img">
+
+                            <div class="projects__data">
+                                <h3 class="projects__title">Personal Portfolio</h3>
+                                <p class="projects__description">
+                                    Built a responsive personal portfolio website adaptable
+                                    to all devices, with ui components and animated interactions to 
+                                    showcase my projects, experience and skills.
+                                </p>
+                                <a href="https://github.com/tomarnold447/portfolio" target="_blank"
+                                    class="button button--flex button--small projects__button">
+                                    GitHub repository
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Adding arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-projects-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-projects-icon"></i>
+                    </div>
+
+                    <!-- Adding pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section>
+
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Phone</h3>
+                                <span class="contact__subtitle">+254 718765262</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">E-mail</h3>
+                                <span class="contact__subtitle">tomarnold447@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Nairobi - Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://formspree.io/f/xqkrgqgp" method="POST" class="contact__form grid" id="my-form">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" id="name" name="name" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">E-mail</label>
+                                <input type="email" id="email" name="email" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Message</label>
+                                <textarea id="message" name="message" cols="0" rows="6" class="contact__input"
+                                    required></textarea>
+                            </div>
+                            <div class="contact__submit">
+                                <div>
+                                    <input type="submit" value="Send message" class="button button--flex"
+                                        id="contact__button">
+                                </div>
+                                <div id="contact__status"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Tom Owiti</h1>
+                        <span class="typeWriter footer__subtitle" data-text='["Web Developer", "Business Intelligence Enthusiast"]' data-speed=2></span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#qualification" class="footer__link">Qualification</a>
+                        </li>
+                        <li>
+                            <a href="#certifications" class="footer__link">Certifications</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="footer__link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/tom-owiti/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/tomarnold447/" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://twitter.com/tomowitti" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                        <a href="https://wa.me/254718765262" target="_blank" class="footer__social">
+                            <i class="uil uil-whatsapp-alt"></i>
+                        </a>
+                        <a href="https://www.instagram.com/saint.arnold_/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&copy; Copyright 2024. Tom Owiti</p>
+            </div>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#home" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--==================== SCROLL REVEAL JS ====================-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+        <!--==================== FONTAWESOME ====================-->
+        <script src="https://kit.fontawesome.com/b58a420f20.js" crossorigin="anonymous"></script>
+    </body>
+
 </html>
-
-<script>
-    const mobileNavbar =document.getElementById('mobile-navbar');
-    const menuOpen =document.getElementById('menu-open');
-    const menuClose =document.getElementById('menu-close');
-    const mobileMenuItems =document.getElementById('mobile-menu-items');
-
-    const homeLink =document.getElementById('home-link');
-    const portfolioLink =document.getElementById('portfolio-link');
-    const educationLink =document.getElementById('education-link');
-    const aboutLink =document.getElementById('about-link');
-    const contactLink =document.getElementById('contact-link');
-
-    function toggleMobileNavBar(){
-        menuOpen.classList.toggle('hidden');
-        menuClose.classList.toggle('hidden');
-        mobileMenuItems.classList.toggle('hidden');
-        mobileNavbar.classList.toggle('mobile-nav-styling');
-    }
-
-    menuClose.addEventListener('click', toggleMobileNavBar);
-
-    menuOpen.addEventListener('click', toggleMobileNavBar);
-
-    homeLink.addEventListener('click', toggleMobileNavBar);
-
-    portfolioLink.addEventListener('click', toggleMobileNavBar);
-
-    educationLink.addEventListener('click', toggleMobileNavBar);
-
-    aboutLink.addEventListener('click', toggleMobileNavBar);
-    
-    contactLink.addEventListener('click', toggleMobileNavBar);
-    
-
-
-</script>
